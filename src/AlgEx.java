@@ -83,9 +83,7 @@ public class AlgEx {
             }
             if (iter == null) {
                 return false;
-            } /*else if (parent == null) {
-                root = null;
-            }*/ else if (iter.right == null && iter.left == null) {
+            } else if (iter.right == null && iter.left == null) {
                 deleteLeaf(iter, parent);
             } else if (!(iter.right != null && iter.left != null)) {
                 deleteOneChildVertex(iter, parent);
